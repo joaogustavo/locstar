@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* segmentos */
+.segmentos-container {
+	box-sizing: border-box;
+	max-width: 2000px;
+	overflow: visible;
+	width: 100%;
+}
+.segmentos-cabecalho, .segmentos-subtitulo {
+	margin: 0 auto;
+	max-width: 1150px;
+	padding: 0 2%;
+	width: 100%;
+}
+.segmentos-cabecalho {
+	background: url(../img/titulos.png) no-repeat 6% bottom;
+	color: #124485;
+	font-family: 'helvetica_neue_lt_stdbdex';
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.segmentos-cabecalho span {
+	color: #115ca9;
+	display: inline-block;
+	font-family: 'helvetica_neue_lt_stdthex';
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 8px;
+	vertical-align: middle;
+	word-spacing: .65rem;
+}
+.segmentos-subtitulo {
+	color: #124485;
+	font-family: 'robotoregular';
+	font-size: 1.34rem;
+	margin-bottom: 15px;
+}
+.segmentos {
+	box-sizing: border-box;
+	background: url(../img/home-segmentos-fundo.png) repeat left top;
+	/*max-height: 221px;*/
+	overflow: visible;
+	text-align: center;
+}
+.segmento-icone {
+	margin: 0 2%;
+	max-width: 135px;
+	padding: 48.5px 0;
+	width: 100%;
+}
+.equipamentos-localizacao {
+	margin: 0 auto;
+	margin-top: 23px;
+	max-width: 1150px;
+	padding: 0 2%;
+	width: 100%;
+}
+/* equipamentos para locacao */
+.equipamentos-container {
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	max-width: 739px;
+	width: 70%;
+}
+.equipamentos-cabecalho {
+	color: #124485;
+	font-family: 'helvetica_neue_lt_stdbdex';
+	font-size: 2.5rem;
+	margin-bottom: 33px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+}
+.equipamentos-cabecalho span {
+	color: #115ca9;
+	display: inline-block;
+	font-family: 'helvetica_neue_lt_stdthex';
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 8px;
+	vertical-align: middle;
+	word-spacing: .65rem;
+}
+.equipamentos {
+	box-sizing: border-box;
+	overflow: visible;
+	width: 100%;
+}
+.equipamentos div:nth-child(2) {
+	margin: 0 15px;
+}
+.equipamento {
+	background: url(../img/home-equipamentos-fundo-img.png) repeat left top;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 60px;
+	position: relative;
+}
+.equipamento:hover, .equipamento:focus {
+	background: url(../img/home-equipamentos-fundo-img-hover.png) repeat left top;
+}
+.equipamento-img {
+	padding: 6px;
+}
+.equipamento-link {
+	background: url(../img/botao-mais.svg) no-repeat left top;
+	bottom: -20%;
+	content: "";
+	height: 40px;
+	left: 40%;
+	position: absolute;
+	width: 40px;
+}
+.equipamento-link:hover, .equipamento-link:focus {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* localizacao */
+.localizacao {
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	max-width: 335px;
+	width: 28%;
+}
+.localizacao-cabecalho {
+	color: #124485;
+	font-family: 'helvetica_neue_lt_stdbdex';
+	font-size: 2.2rem;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+}
+.localizacao-cabecalho span {
+	color: #115ca9;
+	display: inline-block;
+	font-family: 'helvetica_neue_lt_stdthex';
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-bottom: 8px;
+	vertical-align: middle;
+	word-spacing: .25rem;
+}
+/* media queries */
+@media screen and (max-width: 1049px) and (min-width: 768px) {
+.equipamentos-container, .localizacao {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.equipamentos-container {
+	max-width: 1039px;
+	width: 100%;
+}
+.equipamentos {
+	max-width: 1039px;
+	text-align: center;
+}
+.equipamentos-cabecalho {
+	margin-bottom: 15px;
+	width: 100%;
+}
+.localizacao {
+	margin: 0 auto;
+	max-width: 314px;
+}
+.localizacao-cabecalho {
+	padding-top: 15px;
+}
+}
+@media screen and (max-width: 767px) {
+body {
+	padding-top: 98px;
+}
+.banners-nav {
+	padding: 0 3%;
+}
+.equipamentos-container, .localizacao {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.equipamentos {
+	text-align: center;
+}
+.equipamentos-cabecalho {
+	margin-bottom: 15px;
+	width: 100%;
+}
+.localizacao {
+	margin: 0 auto;
+	max-width: 314px;
+}
+.localizacao-cabecalho {
+	padding-top: 15px;
+}
+}
+@media screen and (max-width: 492px) {
+.equipamentos div:nth-child(2) {
+	margin: 0;
+	margin-bottom: 60px;
+}
+}
+@media screen and (max-width: 417px) {
+.equipamentos-cabecalho {
+	line-height: 19px;
+}
+}
+@media screen and (max-width: 341px) {
+.segmentos-cabecalho {
+	line-height: 19px;
+}
+}
